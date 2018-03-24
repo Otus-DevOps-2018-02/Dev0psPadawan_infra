@@ -1,10 +1,13 @@
 # Dev0psPadawan_infra
 Dev0psPadawan Infra repository
+	 
+	Homework-04
 
 bastion_IP = 35.205.64.104 
 someinternalhost_IP = 10.132.0.3
 
-
+	Homework-05 
+ 
 gcloud compute instances create reddit-app\
   --boot-disk-size=10GB \
   --image-family ubuntu-1604-lts \
@@ -24,3 +27,6 @@ gcloud compute firewall-rules create default-puma-server \
 >  --allow tcp:9292 \
 >  --target-tags
 
+	Homework-06
+
+Created all tasks. Resalts has been saved in /packer dirrectory.

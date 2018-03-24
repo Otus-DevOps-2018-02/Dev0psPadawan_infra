@@ -16,7 +16,7 @@
     "type": "googlecompute",
     "project_id": "{{user `project_id`}}",
     "image_name": "{{user `image_name`}}-{{timestamp}}",
-    "image_family": "reddit-base",
+    "image_family": "reddit-full",
     "source_image_family": "ubuntu-1604-lts",
     "zone": "europe-west1-b",
     "ssh_username": "{{user `ssh_username`}}",
@@ -31,12 +31,12 @@
   "provisioners": [
     {
       "type": "shell",
-      "script": "scripts/install_ruby.sh",
+      "script": "scripts/startup_script.sh",
       "execute_command": "sudo {{.Path}}"
     },
     {
       "type": "shell",
-      "script": "scripts/install_mongodb.sh",
+      "script": "files/systemd_unit_create.sh",
       "execute_command": "sudo {{.Path}}"
     }
   ]
