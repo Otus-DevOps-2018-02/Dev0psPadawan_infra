@@ -2,5 +2,4 @@ project = "infra-198010"
 public_key_path = "~/.ssh/appuser.pub"
 private_key_path = "~/.ssh/appuser"
 disk_image = "reddit-base"
-gcp_user1 = "appuser1"
-gcp_user2 = "appuser2"
+
