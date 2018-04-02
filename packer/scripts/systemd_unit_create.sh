@@ -1,8 +1,13 @@
 #!/bin/bash
 
-wget -P /etc/systemd/system/ https://gist.githubusercontent.com/Dev0psPadawan/749536088d99877bff7a260ad2ccd324/raw/01c0a5e05b09f777537aca444e3e56fee380f827/puma.service
+mv /home/scouserandrew/puma.service /etc/systemd/system/ 
 
-cd /home/appuser/reddit
+cd ~/
+git clone -b monolith https://github.com/express42/reddit.git
+cd ./reddit
+bundle install
+
+cd /home/scouserandrew/reddit
 bundle binstubs puma --path ./sbin
 
 systemctl daemon-reload
