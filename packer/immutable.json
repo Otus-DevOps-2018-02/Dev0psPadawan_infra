@@ -1,0 +1,43 @@
+{
+
+  "variables": {
+    "project_id": "",
+    "image_name": "",
+    "machine_type": "",
+    "ssh_username": "",
+    "image_description": "",
+    "disk_type": "",
+    "disk_size": "",
+    "network": "",
+    "tags": ""
+    },
+      "builders": [
+    {
+    "type": "googlecompute",
+    "project_id": "{{user `project_id`}}",
+    "image_name": "{{user `image_name`}}-{{timestamp}}",
+    "image_family": "reddit-full",
+    "source_image_family": "reddit-base",
+    "zone": "europe-west1-b",
+    "ssh_username": "{{user `ssh_username`}}",
+    "machine_type": "{{user `machine_type`}}",
+    "image_description": "{{user `image_description`}}",
+    "disk_type": "{{user `disk_type`}}",
+    "disk_size": "{{user `disk_size`}}",
+    "network": "{{user `network`}}",
+    "tags": "{{user `tags`}}"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "file",
+      "source": "files/puma.service",
+      "destination": "/home/scouserandrew/puma.service"
+    },
+    {
+      "type": "shell",
+      "script": "scripts/systemd_unit_create.sh",
+      "execute_command": "sudo {{.Path}}"
+    }
+  ]
+}
