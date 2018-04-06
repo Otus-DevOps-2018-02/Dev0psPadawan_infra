@@ -27,8 +27,3 @@ variable zone {
 variable gcp_user1 {
   description = "GCP username"
 }
-
-variable gcp_user2 {
-  description = "GCP username"
-}
-
