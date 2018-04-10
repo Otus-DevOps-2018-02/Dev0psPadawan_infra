@@ -58,7 +58,7 @@ Created all tasks. Resalts has been saved in /packer dirrectory.
 ключ был удалён терраформом, т.к. его не было прописано
 в main.tf
 
-**Homework-07**
+**Homework-08**
 
 1. Создал шаблоны app.json и db.json для создания образа в packer
 2. Создал конфигурации для app и db
@@ -66,7 +66,7 @@ Created all tasks. Resalts has been saved in /packer dirrectory.
 4. Создал конфигурации для создания bucket.
 
 
-**Homework-08**
+**Homework-09**
 
 1. Установил Ansible
 2. Создал inventory файл
@@ -77,7 +77,7 @@ Created all tasks. Resalts has been saved in /packer dirrectory.
 7. Написал плейбук (clone.yml) для клонирования репозитория
 
 
-**Homework-09**
+**Homework-10**
 
 1. Реализовал подход "Один playbook, один сценарий"
 2. Использовал handlers
@@ -86,3 +86,11 @@ Created all tasks. Resalts has been saved in /packer dirrectory.
 4. Реализовал подход "Один плейбук, несколько сценариев"
 5. Разделил один playbook на несколько
 6. Поменял provision в Packer`е с bash скриптов на Ansible плейбуки
+
+**Homework-10**
+
+1. Создал роли app и db
+2. Создал окружения stage и prod
+3. Использовал community роль jdauphant.nginx для публикации на 80 порту
+4. Использовал Ansible Vault для шифрования пользовательских данных
+
