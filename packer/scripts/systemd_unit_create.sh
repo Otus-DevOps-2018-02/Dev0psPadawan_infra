@@ -1,13 +1,13 @@
 #!/bin/bash
 
-mv /home/scouserandrew/puma.service /etc/systemd/system/ 
+mv /home/appuser/puma.service /etc/systemd/system/ 
 
 cd ~/
 git clone -b monolith https://github.com/express42/reddit.git
 cd ./reddit
 bundle install
 
-cd /home/scouserandrew/reddit
+cd /home/appuser/reddit
 bundle binstubs puma --path ./sbin
 
 systemctl daemon-reload
