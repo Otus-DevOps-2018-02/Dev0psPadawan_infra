@@ -77,6 +77,7 @@ Created all tasks. Resalts has been saved in /packer dirrectory.
 7. Написал плейбук (clone.yml) для клонирования репозитория
 
 
+
 **Homework-09**
 
 1. Реализовал подход "Один playbook, один сценарий"
