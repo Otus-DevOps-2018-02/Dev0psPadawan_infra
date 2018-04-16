@@ -2,7 +2,7 @@
     "project_id": "$ID",
     "image_name": "$NAME",
     "machine_type": "$TYPE",
-    "ssh_username": "appuser",
+    "ssh_username": "scouserandrew",
     "image_description": "Custom created by Packer",
     "disk_size": "10",
     "disk_type": "pd-standard",
