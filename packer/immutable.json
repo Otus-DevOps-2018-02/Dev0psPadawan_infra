@@ -32,7 +32,7 @@
     {
       "type": "file",
       "source": "files/puma.service",
-      "destination": "/home/scouserandrew/puma.service"
+      "destination": "/home/appuser/puma.service"
     },
     {
       "type": "shell",
