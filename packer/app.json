@@ -23,7 +23,7 @@
       "disk_size": "{{user `disk_size`}}",
       "disk_type": "{{user `disk_type`}}",
       "network": "{{user `network`}}",
-      "ssh_username": "scouserandrew"
+      "ssh_username": "appuser"
     }
   ],
   "provisioners": [

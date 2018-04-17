@@ -51,9 +51,9 @@ Created all tasks. Resalts has been saved in /packer dirrectory.
 
 Задание *:
 1. Использовал ресурс google_compute_project_metadata_item 
-для добавления ключа пользователя(ей) scouserandrew1 (и appuser2)
+для добавления ключа пользователя(ей) appuser1 (и appuser2)
  в метаданные проекта.
-2. Добавил ssh ключ пользователю scouserandrew_web через
+2. Добавил ssh ключ пользователю appuser_web через
 веб интерфейс. После выполниния terraform apply
 ключ был удалён терраформом, т.к. его не было прописано
 в main.tf
