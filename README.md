@@ -79,6 +79,7 @@ Created all tasks. Resalts has been saved in /packer dirrectory.
 
 **Homework-10**
 
+
 1. Реализовал подход "Один playbook, один сценарий"
 2. Использовал handlers
 3. Использовал шаблоны
