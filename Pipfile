@@ -9,4 +9,3 @@ name = "pypi"
 requests = "*"
 
 [requires]
-python_version = "2.7"
