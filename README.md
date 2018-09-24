@@ -51,9 +51,9 @@ Created all tasks. Resalts has been saved in /packer dirrectory.
 
 Задание *:
 1. Использовал ресурс google_compute_project_metadata_item 
-для добавления ключа пользователя(ей) appuser1 (и appuser2)
+для добавления ключа пользователя(ей) scouserandrew1 (и appuser2)
  в метаданные проекта.
-2. Добавил ssh ключ пользователю appuser_web через
+2. Добавил ssh ключ пользователю scouserandrew_web через
 веб интерфейс. После выполниния terraform apply
 ключ был удалён терраформом, т.к. его не было прописано
 в main.tf
@@ -88,10 +88,24 @@ Created all tasks. Resalts has been saved in /packer dirrectory.
 5. Разделил один playbook на несколько
 6. Поменял provision в Packer`е с bash скриптов на Ansible плейбуки
 
-**Homework-10**
+**Homework-11**
 
 1. Создал роли app и db
 2. Создал окружения stage и prod
 3. Использовал community роль jdauphant.nginx для публикации на 80 порту
 4. Использовал Ansible Vault для шифрования пользовательских данных
 
+**Homework-12**
+
+1. Установиk VirtualBox на локальную машину
+2. Установим Vagrant
+3. В директории ansible создал файл Vagrantfile с описанием VM dbserver и appserver
+4. Создал ВМ и проверил их работу
+5. Добавил провижининг в определение хостов dbserver и appserver в файл Vagrantfile
+6. Создал плейбук base.yml в котором описал установку Python на ВМ для запуска провтиженинга из п.5
+7. Сгрупировал такси по типам установка mongo, конфигурация mongo, установка ruby, конфигурация puma
+8. Параметризировал конфигурацию main.yml роли app и файл конфигурации puma.yml, для кастомного пользователя.
+9. Внёс изменеия в конфигурацию Vagrant, для корректного проксирования приложения на 80 порт.
+10. Установил Molecule, Ansible, Testinfra, python-vagrant, создал среду virtualenv.
+11. Протестировал роль db на предмет установленной mongodb, наличия конфига mongodb и прослушивания порта 27017
+12. Создал тестовые машины при помощи molecule.

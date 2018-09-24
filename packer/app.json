@@ -23,12 +23,14 @@
       "disk_size": "{{user `disk_size`}}",
       "disk_type": "{{user `disk_type`}}",
       "network": "{{user `network`}}",
-      "ssh_username": "appuser"
+      "ssh_username": "scouserandrew"
     }
   ],
   "provisioners": [
     {
       "type": "ansible",
+      "extra_arguments": [ "--tags=ruby" ],
+      "ansible_env_vars": ["ANSIBLE_ROLES_PATH={{ pwd }}/ansible/roles"],
       "playbook_file": "ansible/playbooks/packer_app.yml"}
   ]
 }

@@ -5,9 +5,9 @@ After=network.target
 [Service]
 Type=simple
 
-WorkingDirectory=/home/appuser/reddit
+WorkingDirectory=/home/scouserandrew/reddit
 
-ExecStart=/home/appuser/reddit/sbin/puma -b tcp://0.0.0.0:9292
+ExecStart=/home/scouserandrew/reddit/sbin/puma -b tcp://0.0.0.0:9292
 
 Restart=always
 
